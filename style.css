@@ -108,7 +108,7 @@ body {
 
 .data-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .certificate {
