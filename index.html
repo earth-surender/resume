@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <div class="navbar">
 
         <div class="logo">
-            <a href="#" class="res"><h1>Resume</h1></a>
+            <a href="port.html" class="res"><h1>Resume</h1></a>
         </div>
 
     </div>
@@ -24,24 +24,25 @@
     
 
     <div class="data">
+        <div class="backg2">
         <div class="part1">
             
             <img src="profilepic.jpg" class="img-prof">
 
             <div class="des-prof">
-                <h2 class="descript">Pheerachat Jamfa</h2>
+                <h1 class="descript">Pheerachat Jamfa</h1>
                 <h3 class="descript" style="margin-top: 5px;">Hi, I'm Earth</h3>
-                <p class="descript1">This is my dedicated resume website to showcase my certificate. Thank you for visiting my website.</ย>
+                <p class="descript">This is my dedicated resume website to showcase my certificate. Thank you for visiting my website.</ย>
                 <h3 class="descript" style="font-size: 1.2rem;">Nakhon Sawan Rajabhat University<br>Information Technology</h3>
 
             <div class="contact">
-                <a href="#"><img src="facebook.png" class="facebook"></a>
-                <a href="#"><img src="google.png" class="gmail"></a>
-                <a href="#"><img src="instagram.png" class="ig"></a>
+                <a href="https://www.facebook.com/profile.php?id=100090873545758"><img src="facebook.png" class="facebook"></a>
+                <a href="mailto:pheerachat.j@nsru.ac.th"><img src="gmail.png" class="gmail"></a>
+                <a href="tel:+66630577831"><img src="call.png" class="call"></a>
             </div>
         </div>
         </div>
-            
+        </div> 
     </div>
 
     <div class="data-2">
@@ -125,6 +126,7 @@
         </div>
 
     </div>
+    </div>
 
     <div id="popup" class="modal" style="display: none;">
         <div class="modal-bg"></div>
@@ -171,6 +173,49 @@
 
     </div>
 
+    <div class="activity">
+        <h3 class="acty">Activity</h3>
+
+        <div class="act1">
+            <img src="camp.jpg" class="camp">
+            <p><b>ค่ายวิทย์สัญจรจิตอาสา</b></p>
+            <hr class="responsive-hr">
+            <p class="descamp">ค่ายจิตอาสาที่โรงเรียนห้วยน้ำหอมวิทยาคาร <br>อำเภอชุมตาบง จังหวัดนครสวรรค์</p>
+        </div>
+
+        <div class="act2">
+            <img src="erp.jpg" class="camp">
+            <p><b>จัดโครงการสัมมนา ERP</b></p>
+            <hr class="responsive-hr">
+            <p class="descamp">จัดโครงการสัมมนา ERP <br>Enterprise Resource Planning <br> ระบบการวางแผนทรัพยากรในองค์กร <br> ด้วยโปรแกรม Open ERP</p>
+        </div>
+
+        <div class="act1">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="scien1.jpg" class="camp" alt="Slide 1">
+                    <img src="scien2.jpg" class="camp" alt="Slide 2">
+                    <img src="scien3.jpg" class="camp" alt="Slide 3">
+                    <img src="scien4.jpg" class="camp" alt="Slide 4">
+                    <img src="scien5.jpg" class="camp" alt="Slide 5">
+                    <img src="scien6.jpg" class="camp" alt="Slide 6">
+                </div>
+            </div>
+            <p><b>จัดโครงการวันวิทยาศาสตร์</b></p>
+            <hr class="responsive-hr">
+            <p class="descamp">เข้าร่วมการจัดโครงการการแข่งหุ่นยนต์ <br>ในงานวันวิทยาศาสตร์ของ คณะวิทยาศาสตร์ <br> สาขาเทคโนโลยีสารสนเทศ</p>
+        </div>
+        </div>
+
+        
+        <div class="bottom-bar">
+            <div class="empty"></div>
+        </div>
+        <div class="bottom-navbar">
+            <div class="my-persdata">
+                <p>&copy; 2023 </p>
+            </div>
+        </div>
 
     <script>
             function showpopup1() {
@@ -199,6 +244,47 @@
                 var closep = document.getElementById("closepo4");
                 popup3.style.display = "none";
             }
+
+            const slider = document.querySelector(".slider");
+        const images = document.querySelectorAll(".slider img");
+    
+        let currentIndex = 0;
+        let interval;
+    
+        function startSlider() {
+            interval = setInterval(() => {
+                moveToNextSlide();
+            }, 3000); // เปลี่ยนรูปภาพทุก 3 วินาที
+        }
+    
+        function stopSlider() {
+            clearInterval(interval);
+        }
+    
+        function moveToNextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSlider();
+        }
+    
+        function moveToPrevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateSlider();
+        }
+    
+        function updateSlider() {
+            const translateX = -currentIndex * 100;
+            slider.style.transform = `translateX(${translateX}%)`;
+        }
+    
+        startSlider();
+    
+        slider.addEventListener("mouseover", () => {
+            stopSlider();
+        });
+    
+        slider.addEventListener("mouseout", () => {
+            startSlider();
+        });
     </script>
 
     
