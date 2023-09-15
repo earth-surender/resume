@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     border: 0;
-    background-color: #d6def2;
+    background-color: #f4f7ff;
 }
 
 .navbar {
@@ -17,7 +17,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b7bcef;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -34,8 +35,12 @@ body {
 
 .data {
     margin: 50px;
-    background-color: rgb(243, 245, 255);
-    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เงาสำหรับกล่อง */
+    border: 10px solid; /* ขอบสี */
+    border-image: linear-gradient(to right, #e0c3fc, #8ec5fc); /* สีขอบ gradient */
+    border-image-slice: 1;
+    border-radius: 10px;
 }
 
 .part1 {
@@ -91,19 +96,19 @@ body {
 }
 .gmail:hover {
     transform: scale(1.2);
-    border-bottom: 3px solid #cddceb;
+    border-bottom: 3px solid #f44336;
     border-spacing: 0px 15px;
 }
 
-.ig {
+.call {
     margin-left: 20px;
     max-width: 100%;
     width: 45px;
     transition: 0.60s;
 }
-.ig:hover {
+.call:hover {
     transform: scale(1.2);
-    border-bottom: 3px solid #e00047;
+    border-bottom: 3px solid #04c8bc;
 }
 
 .data-2 {
@@ -116,10 +121,14 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 25px;
-    background-color: rgb(243, 245, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เงาสำหรับกล่อง */
+    border: 10px solid; /* ขอบสี */
+    border-image: linear-gradient(to right, #e0c3fc, #8ec5fc); /* สีขอบ gradient */
+    border-image-slice: 1;
 }
 
 .my-cer {
@@ -159,7 +168,11 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 25px;
-    background-color: rgb(243, 245, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เงาสำหรับกล่อง */
+    border: 10px solid; /* ขอบสี */
+    border-image: linear-gradient(to right, #e0c3fc, #8ec5fc); /* สีขอบ gradient */
+    border-image-slice: 1;
 }
 
 .container .skill-box{
@@ -294,4 +307,110 @@ body {
 .md-im {
     max-width: 100%;
     width: 800px;
+}
+
+.acty {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.activity {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เงาสำหรับกล่อง */
+    border: 10px solid; /* ขอบสี */
+    border-image: linear-gradient(to right, #e0c3fc, #8ec5fc); /* สีขอบ gradient */
+    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.act1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.act2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.camp {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.descamp {
+    text-align: center;
+}
+
+/* สไตล์ของ <hr> สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 600px) {
+    hr.responsive-hr {
+      width: 50%; /* ปรับขนาดแถบเมื่อหน้าจอขนาดเล็ก */
+    }
+  }
+
+  /* สไตล์ของ <hr> สำหรับหน้าจอขนาดกลาง */
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    hr.responsive-hr {
+      width: 70%; /* ปรับขนาดแถบเมื่อหน้าจอขนาดกลาง */
+    }
+  }
+
+  /* สไตล์ของ <hr> สำหรับหน้าจอขนาดใหญ่ */
+  @media screen and (min-width: 1201px) {
+    hr.responsive-hr {
+      width: 90%; /* ปรับขนาดแถบเมื่อหน้าจอขนาดใหญ่ */
+    }
+  }
+
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* ปรับขนาดตามความต้องการ */
+    margin: 0 auto; /* จัดตรงกลาง */
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.bottom-bar {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    height: 3vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-navbar {
+    margin: 0;
+    padding: 10px;
+    height: 10vw;
+    background-color: #eaeaea;
 }
