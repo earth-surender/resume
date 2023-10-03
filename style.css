@@ -413,4 +413,24 @@ body {
     padding: 10px;
     height: 10vw;
     background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.document {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doccer {
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+.doccer:hover {
+    border-bottom: #333 solid 2px;
+    transform: scale(1.05);
 }
