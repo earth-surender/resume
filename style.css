@@ -58,17 +58,21 @@ body {
 
 .des-prof {
     margin: 50px;
-    line-height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.probpoo {
+    line-height: 10px;
+}
+
+.desname {
+    font-size: 2rem;
+}
+
 .descript {
-    font-size: clamp(16px, 2.5vw, 32px);
-    line-height: 30px;
-    display: flex;
-    flex-direction: column;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -411,7 +415,7 @@ body {
 .bottom-navbar {
     margin: 0;
     padding: 10px;
-    height: 10vw;
+    height: auto;
     background-color: #eaeaea;
     display: flex;
     justify-content: space-around;
